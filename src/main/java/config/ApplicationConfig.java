@@ -56,7 +56,7 @@ public class ApplicationConfig {
     public ControllerBearPosition getControllerBearPosition() {
         return new ControllerBearPosition();
     }
-
+//test2
     @Bean
     public ControllerBothPosition getControllerBothPosition() {
         return new ControllerBothPosition();
