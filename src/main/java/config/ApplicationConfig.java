@@ -46,7 +46,7 @@ public class ApplicationConfig {
     public Compare getCompare() {
         return new Compare();
     }
-
+// test
     @Bean
     public ControllerBullPosition getControllerBullPosition() {
         return new ControllerBullPosition();
