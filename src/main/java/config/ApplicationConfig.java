@@ -41,7 +41,7 @@ public class ApplicationConfig {
     public Start getStart() {
         return new Start();
     }
-//test
+//test1
     @Bean
     public Compare getCompare() {
         return new Compare();
