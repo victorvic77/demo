@@ -1,9 +1,6 @@
 package config;
 
-import controller.ControllerBearPosition;
-import controller.ControllerBothPosition;
-import controller.ControllerBullPosition;
-import controller.ControllerTestBullMts;
+import controller.*;
 import indicator.Percent;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -36,12 +33,12 @@ public class ApplicationConfig {
     public Table getTable() {
         return new Table();
     }
-// push333
+
     @Bean
     public Start getStart() {
         return new Start();
     }
-//test1
+
     @Bean
     public Compare getCompare() {
         return new Compare();
