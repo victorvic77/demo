@@ -18,7 +18,7 @@ public class ApplicationConfig {
     public Equal getEqual() {
         return new Equal();
     }
-
+//kk
     @Bean
     public Exchange getExchange() {
         return new Exchange();
