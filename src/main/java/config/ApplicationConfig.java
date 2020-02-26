@@ -36,7 +36,7 @@ public class ApplicationConfig {
     public Table getTable() {
         return new Table();
     }
-
+// push
     @Bean
     public Start getStart() {
         return new Start();
