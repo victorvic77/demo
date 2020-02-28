@@ -29,3 +29,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### front ###
+*/src/front/node_modules/
+*/src/front/package-lock.json
+
