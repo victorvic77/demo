@@ -1,19 +1,45 @@
 {
-  "name": "demo",
+  "name": "react-scratch",
   "version": "1.0.0",
-  "description": "demo",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server",
+    "start": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/victorvic77/demo"
   },
-  "author": "victor",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "css-loader": "^2.1.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ],
+    "plugins": [
+      "syntax-dynamic-import"
+    ]
+  },
+  "optionalDependencies": {
+    "mini-css-extract-plugin": "^0.5.0"
   }
 }
