@@ -1,16 +1,14 @@
 import React, { Component } from "react";
 import s from "./app.component.css";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
 
+import {BrowserRouter} from "react-router-dom";
+import Switch from "react-router-dom/es/Router";
+import Link from "react-router-dom/modules/Link";
+import Route from "react-router-dom/es/Route";
 
 export default function BasicExample() {
     return (
-        <Router>
+        <BrowserRouter basename='/'>
             <div>
                 <ul>
                     <li>
@@ -22,7 +20,7 @@ export default function BasicExample() {
                     <li>
                         <Link to="/dashboard">Dashboard</Link>
                     </li>
-                    /ul>
+                    </ul>
 
                     <hr />
 
@@ -37,16 +35,13 @@ export default function BasicExample() {
                             <Dashboard />
                         </Route>
                     </Switch>
+
             </div>
-        </Router>
+        </BrowserRouter>
 );
 }
 
 
-class MyComponent extends Component {
-    render() {
-        return <div className={s.intro}>Hello Victor. You are Great.</div>;
-    }
-}
 
-export default MyComponent;
+
+
