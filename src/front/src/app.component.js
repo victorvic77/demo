@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import s from "./app.component.css";
 
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, Link} from "react-router-dom";
 import Switch from "react-router-dom/es/Router";
-import Link from "react-router-dom/modules/Link";
 import Route from "react-router-dom/es/Route";
 
 export default function BasicExample() {
@@ -41,7 +40,14 @@ export default function BasicExample() {
 );
 }
 
+/*
+class MyComponent extends Component {
+    render() {
+        return <div className={s.intro}>Hello Victor. You are Greate.</div>;
+    }
+}
 
-
+export default MyComponent;
+*/
 
 
