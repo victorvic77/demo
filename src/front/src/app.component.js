@@ -4,6 +4,9 @@ import s from "./app.component.css";
 import {BrowserRouter, Link} from "react-router-dom";
 import Switch from "react-router-dom/es/Router";
 import Route from "react-router-dom/es/Route";
+// import {Route} from "react-router-dom";
+
+import {Exit} from './modules/exit'
 
 export default function BasicExample() {
     return (
@@ -25,13 +28,13 @@ export default function BasicExample() {
 
                     <Switch>
                         <Route exact path="/">
-                            <Home />
+                            <Exit />
                         </Route>
                         <Route path="/about">
-                            <About />
+                            About
                         </Route>
                         <Route path="/dashboard">
-                            <Dashboard />
+                            Dashboard
                         </Route>
                     </Switch>
 
