@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import s from "./app.component.css";
 
 import {BrowserRouter, Link} from "react-router-dom";
-import Switch from "react-router-dom/es/Router";
+import Switch from "react-router-dom/es/Switch";
 import Route from "react-router-dom/es/Route";
-// import {Route} from "react-router-dom";
+// import {Switch, Route} from "react-router-dom";
 
-import {Exit} from './modules/exit'
+
+
+import {Exit1} from './modules/exit'
 
 export default function BasicExample() {
     return (
@@ -28,13 +30,13 @@ export default function BasicExample() {
 
                     <Switch>
                         <Route exact path="/">
-                            <Exit />
+                            <Exit1 />
                         </Route>
                         <Route path="/about">
-                            About
+                            534
                         </Route>
                         <Route path="/dashboard">
-                            Dashboard
+                            678
                         </Route>
                     </Switch>
 

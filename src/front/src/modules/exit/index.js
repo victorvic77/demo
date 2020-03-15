@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Exit = () => {
+export const Exit1 = () => {
     return (
         <div>
             123
