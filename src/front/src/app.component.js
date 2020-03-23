@@ -29,6 +29,9 @@ export default function BasicExample() {
 
                 <button /> { /*Submit */ }
                 <input/> {/* Clear the form */}
+                <textarea/> {/* Clear the form */}
+                <button /> { /*Submit */ }
+
 
 
                 <Switch>
