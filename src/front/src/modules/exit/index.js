@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 
 export const Exit1 = () => {
     return (
@@ -7,6 +7,8 @@ export const Exit1 = () => {
         </div>
     );
 };
+
+
 
 /*
 class MyComponent extends Component {

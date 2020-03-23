@@ -4,7 +4,6 @@ import s from "./app.component.css";
 import {BrowserRouter, Link} from "react-router-dom";
 import Switch from "react-router-dom/es/Switch";
 import Route from "react-router-dom/es/Route";
-// import {Switch, Route} from "react-router-dom";
 
 
 
@@ -28,7 +27,11 @@ export default function BasicExample() {
 
                     <hr />
 
-                    <Switch>
+                <button /> { /*Submit */ }
+                <input/> {/* Clear the form */}
+
+
+                <Switch>
                         <Route exact path="/">
                             <Exit1 />
                         </Route>
@@ -44,6 +47,8 @@ export default function BasicExample() {
         </BrowserRouter>
 );
 }
+
+
 
 /*
 class MyComponent extends Component {
