@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import s from "./app.component.css";
 
+/*
 import {BrowserRouter, Link} from "react-router-dom";
 import Switch from "react-router-dom/es/Switch";
 import Route from "react-router-dom/es/Route";
-
 
 
 import {Exit1} from './modules/exit'
@@ -27,10 +27,13 @@ export default function BasicExample() {
 
                     <hr />
 
-                <button /> { /*Submit */ }
-                <input/> {/* Clear the form */}
-                <textarea/> {/* Clear the form */}
-                <button /> { /*Submit */ }
+                <button
+                    title={"Submit"}
+                />
+
+                <input/>
+                <textarea/>
+                <button />
 
 
 
@@ -51,16 +54,18 @@ export default function BasicExample() {
 );
 }
 
+*/
 
 
-/*
 class MyComponent extends Component {
     render() {
-        return <div className={s.intro}>Hello Victor. You are Greate.</div>;
+        return <button className={s.intro}>You are Greate.</button>;
+        return <button className={s.but}>Hello Victor. You are Greate.</button>;
+
     }
 }
 
 export default MyComponent;
-*/
+
 
 
