@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import s from "./app.component.css";
 
+// import FormContainer from './FormContainer';
+
 /*
 import {BrowserRouter, Link} from "react-router-dom";
 import Switch from "react-router-dom/es/Switch";
@@ -59,13 +61,29 @@ export default function BasicExample() {
 
 class MyComponent extends Component {
     render() {
-        return <button className={s.intro}>You are Greate.</button>;
-        return <button className={s.but}>Hello Victor. You are Greate.</button>;
-
+        return  <div>
+        <button className={s.intro}>You are Greate.</button>;
+        <button className={s.but}>Hello Victor. You are Greate.</button>;
+    </div>
     }
 }
 
+
 export default MyComponent;
 
+/*
+class App extends Component {
+    render() {
+        return (
+            <div className="container">
+                <h3>React Form</h3>
+                <FormContainer />
+            </div>
+        );
+    }
+}
 
+export default App;
+
+*/
 
