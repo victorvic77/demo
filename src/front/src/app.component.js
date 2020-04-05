@@ -2,13 +2,15 @@ import React, { Component } from "react";
 import s from "./app.component.css";
 
 // import FormContainer from './FormContainer';
+import FormContainer from './containers/FormContainer';
+import './App.css';
 
-/*
+
 import {BrowserRouter, Link} from "react-router-dom";
 import Switch from "react-router-dom/es/Switch";
 import Route from "react-router-dom/es/Route";
 
-
+/*
 import {Exit1} from './modules/exit'
 
 export default function BasicExample() {
@@ -55,10 +57,10 @@ export default function BasicExample() {
         </BrowserRouter>
 );
 }
-
 */
 
 
+/*
 class MyComponent extends Component {
     render() {
         return  <div>
@@ -70,7 +72,7 @@ class MyComponent extends Component {
 
 
 export default MyComponent;
-
+*/
 /*
 class App extends Component {
     render() {
@@ -87,3 +89,15 @@ export default App;
 
 */
 
+class App extends Component {
+    render() {
+        return (
+            <div className="col-md-6">
+                <h3> Sample Form Container </h3>
+                <FormContainer />
+            </div>
+        );
+    }
+}
+
+export default App;
