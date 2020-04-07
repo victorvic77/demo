@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
 /* Import Components */
-import CheckBox from "../components/CheckBox";
-import Input from "../components/Input";
-import TextArea from "../components/TextArea";
-import Select from "../components/Select";
-import Button from "../components/Button";
+import CheckBox from "../component/CheckBox";
+import Input from "../component/Input";
+import TextArea from "../component/TextArea";
+import Select from "../component/Select";
+import Button from "../component/Button";
 
 class FormContainer extends Component {
     constructor(props) {
