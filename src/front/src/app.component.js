@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import s from "./app.component.css";
 
-// import FormContainer from './FormContainer';
-import FormContainer from './containers/FormContainer';
+//import FormContainer from './FormContainer.jsx';
+import FormContainer from './containers/FormContainer.jsx';
 import './App.css';
 
 
