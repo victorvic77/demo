@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 /* Import Components */
 import CheckBox from '../component/CheckBox';
 import Input from '../component/Input';
-import TextArea from '../component/TextArea';
+import TextArea from '../component/TextArea.jsx';
 import Select from '../component/Select';
 import Button from '../component/Button'
 
@@ -154,6 +154,7 @@ class FormContainer extends Component {
                            selectedOptions = { this.state.newUser.skills}
                            handleChange={this.handleCheckBox}
                 /> {/* Skill */}
+
                 <TextArea
                     title={'About you.'}
                     rows={10}
