@@ -133,7 +133,7 @@ class FormContainer extends Component {
                        placeholder = {'Enter your name'}
                        handleChange = {this.handleInput} /> {/* Name of the user */}
 
-                <Input inputType={'number'}
+                <Input inputType={'number'}m
                        name={'age'}
                        title= {'Age'}
                        value={this.state.newUser.age}
