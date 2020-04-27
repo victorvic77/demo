@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import s from "./app.component.css";
+//import s from "./app.component.css";
 
-//import FormContainer from './FormContainer.jsx';
-import FormContainer from './containers/FormContainer.jsx';
-import './App.css';
+import FormContainer from './FormContainer.jsx';
+//import FormContainer from './containers/FormContainer.jsx';
+//import './App.css';
 
 
-import {BrowserRouter, Link} from "react-router-dom";
-import Switch from "react-router-dom/es/Switch";
-import Route from "react-router-dom/es/Route";
+//import {BrowserRouter, Link} from "react-router-dom";
+//import Switch from "react-router-dom/es/Switch";
+//import Route from "react-router-dom/es/Route";
 
 /*
 import {Exit1} from './modules/exit'
@@ -72,7 +72,7 @@ class MyComponent extends Component {
 
 
 export default MyComponent;
-*/
+
 /*
 class App extends Component {
     render() {
