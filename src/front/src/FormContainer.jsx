@@ -28,6 +28,7 @@ class FormContainer extends React.Component {
             <div>
                 <input type = "text" value = {this.state.data}
                        onChange = {this.updateState} />
+
                 <h4>{this.state.data}</h4>
 
                 <button className={s.intro}>You are Greate.</button>
@@ -43,6 +44,7 @@ class FormContainer extends React.Component {
 
                 <button onClick = {this.handleClick}>
                     Click me!(Already Clicked {this.state.counter} times!)
+                    debugger;
                 </button>
 
             </div>
