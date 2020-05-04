@@ -49,7 +49,6 @@ class FormContainer extends React.Component {
 
                 <button onClick = {this.handleClick}>
                     Click me!(Already Clicked {this.state.counter} times!)
-                    debugger;
                 </button>
 
                 <h4>{this.state.counter}</h4>
