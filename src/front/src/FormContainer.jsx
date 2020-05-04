@@ -6,8 +6,7 @@ class FormContainer extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {data: 'Initial data...'}
-        this.state = {counter: 0}
+        this.state = {counter: 0, data: 'Initial data...'}
        
         this.updateState = this.updateState.bind(this);
         this.handleClick = this.handleClick.bind(this)
@@ -45,8 +44,6 @@ class FormContainer extends React.Component {
 
                        <select  className={s.select}></select>
 
-                <h2>{this.state.data}</h2>
-
                 <button onClick = {this.handleClick}>
                     Click me!(Already Clicked {this.state.counter} times!)
                 </button>
@@ -55,8 +52,6 @@ class FormContainer extends React.Component {
 
                 <input type = "text" value = {this.state.data}
                        onChange = {this.handleClick} />
-
-                <h4>{this.state.counter}</h4>
 
             </div>
         );

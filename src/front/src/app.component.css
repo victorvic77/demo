@@ -2,12 +2,12 @@
     background-color: orchid;
     position: absolute;
     top: 150px;
-    left: 150px;
+    left: 300px;
 
 }
 
 .but {
-    width: 300px;
+    width: 350px;
     height: 300px;
     background-color: blue;
     position: absolute;
