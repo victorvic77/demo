@@ -52,18 +52,18 @@ class FormContainer extends Component {
         }), () => console.log(this.state.newUser))
     }
 
-    handleInput(e) {
-        let value = e.target.value;
-        let name = e.target.name;
+    handleInput(event) {
+        let value = event.target.value;
+        let name = event.target.name;
         this.setState( prevState => ({ newUser :
                 {...prevState.newUser, [name]: value
                 }
         }), () => console.log(this.state.newUser))
     }
 
-    handleTextArea(e) {
+    handleTextArea(event) {
         console.log("Inside handleTextArea");
-        let value = e.target.value;
+        let value = event.target.value;
         this.setState(prevState => ({
             newUser: {
                 ...prevState.newUser, about: value
