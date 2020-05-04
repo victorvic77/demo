@@ -15,6 +15,7 @@ class FormContainer extends React.Component {
     };
     updateState(e) {
         //debugger;
+        console.log("The world is mine")
         this.setState({data: e.target.value});
     }
     handleClick () {
@@ -26,6 +27,7 @@ class FormContainer extends React.Component {
     render() {
         return (
             <div>
+
                 <input type = "text" value = {this.state.data}
                        onChange = {this.updateState} />
 
@@ -46,6 +48,11 @@ class FormContainer extends React.Component {
                     Click me!(Already Clicked {this.state.counter} times!)
                     debugger;
                 </button>
+
+                <h4>{this.state.counter}</h4>
+
+                <input type = "text" value = {this.state.data}
+                       onChange = {this.handleClick} />
 
             </div>
         );
