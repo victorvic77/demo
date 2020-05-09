@@ -1,9 +1,13 @@
 import React, { Component } from "react";
 //import s from "./app.component.css";
 
-import FormContainer from './FormContainer.jsx';
+//import FormContainer from './FormContainer.jsx';
+import FormContainer from './FormContainerMain.jsx';
 //import FormContainer from './containers/FormContainer.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
 //import './App.css';
+
+
 
 
 //import {BrowserRouter, Link} from "react-router-dom";

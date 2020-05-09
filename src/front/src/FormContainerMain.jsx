@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import s from "./app.component.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class FormContainer extends React.Component {
 
@@ -10,7 +11,7 @@ class FormContainer extends React.Component {
             counter: 0,
             data: 'Initial data...'
         }
-       
+
         this.updateState = this.updateState.bind(this);
         this.handleClick = this.handleClick.bind(this)
 
@@ -43,9 +44,9 @@ class FormContainer extends React.Component {
                 <button className={s.but}>Hello Victor. You are Greate.</button>
 
                 <textarea className={s.text}
-                       placeholder={"Enter your name"}/>
+                          placeholder={"Enter your name"}/>
 
-                       <select  className={s.select}></select>
+                <select  className={s.select}></select>
 
                 <button onClick = {this.handleClick}>
                     Click me!(Already Clicked {this.state.counter} times!)
