@@ -16,6 +16,8 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.4.1",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-router-dom": "^5.1.2"

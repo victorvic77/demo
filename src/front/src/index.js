@@ -1,6 +1,7 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 //const App = lazy(() => import("./component/app.component"));
 //ReactDOM.render(
