@@ -44,20 +44,20 @@ class FormContainer extends React.Component {
 
                     <div className="row justify-content-end">
                          <div className="col-12 offset-8">
-                            <button type="button" className="btn btn-secondary btn-lg btn-block">Block level button</button>
+                            <button type="button" className="btn btn-secondary">Block level button</button>
                         </div>
                     </div>
 
                     <div className="row">
                         <div className="col-4">
-                            <button type="button" className="btn btn-primary btn-lg btn-block">Block level button
+                            <button type="button" className="btn btn-success">Block level button
                             </button>
                         </div>
                     </div>
 
                     <div className="row">
                         <div className="col-12">
-                            <button type="button" className="btn btn-secondary btn-lg btn-block">Block level button
+                            <button type="button" className="btn btn-dange">Block level button
                             </button>
                         </div>
                     </div>
