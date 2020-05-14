@@ -18,15 +18,13 @@ class FormContainer extends React.Component {
 
     };
 
-    updateState(event) {
-        //debugger;
+    updateState = (event) => {
         console.log("The world is mine")
         this.setState({data: event.target.value})
         console.log(event.target.value)
     }
 
-    handleClick () {
-        //debugger;
+    handleClick = () => {
         console.log("Hello All")
         this.setState({counter: ++this.state.counter})
     }
@@ -57,7 +55,7 @@ class FormContainer extends React.Component {
 
                     <div className="row">
                         <div className="col-12">
-                            <button type="button" className="btn btn-dange">Block level button
+                            <button type="button" className="btn btn-danger">Block level button
                             </button>
                         </div>
                     </div>
