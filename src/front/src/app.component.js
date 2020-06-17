@@ -4,7 +4,7 @@ import React, { Component } from "react";
 //import s from "./app.component.css";
 
 //import FormContainer from './FormContainer.jsx';
-import FormContainer from './FormContainerMain.jsx';
+import FormContainer from './FormContainerNew.jsx';
 //import FormContainer from './containers/FormContainer.jsx';
 //import './App.css';
 
@@ -98,7 +98,6 @@ class App extends Component {
     render() {
         return (
             <div className="col-md-6">
-                <h3> Sample Form Container </h3>
                 <FormContainer />
             </div>
         );
