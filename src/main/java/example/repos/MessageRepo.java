@@ -1,5 +1,6 @@
-package example;
+package example.repos;
 
+import example.domain.Message;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package example;
+package example.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -45,4 +45,6 @@ public class Message {
     public void setTag(String tag) {
         this.tag = tag;
     }
+
+
 }
