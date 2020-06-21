@@ -1,7 +1,7 @@
 package example.controllers;
 
 import example.domain.Role;
-import example.domain.User;
+import example.domain.UserAll;
 import example.repos.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,8 +22,8 @@ public class RegistrationController {
     }
 
     @PostMapping("/registration")
-    public String addUser(User user, Map<String, Object> model) {
-        User userFromDb = userRepo.findByUsername(user.getUsername());
+    public String addUser(UserAll user, Map<String, Object> model) {
+        UserAll userFromDb = userRepo.findByUsername(user.getUsername());
 
         if (userFromDb != null) {
             model.put("message", "User exists!");

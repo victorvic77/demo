@@ -1,7 +1,7 @@
 package example.controllers;
 
 import example.domain.Role;
-import example.domain.User;
+import example.domain.UserAll;
 import example.repos.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -29,7 +29,7 @@ public class UserController {
     }
 
     @GetMapping("{user}")
-    public String userEditForm(@PathVariable User user, Model model) {
+    public String userEditForm(@PathVariable UserAll user, Model model) {
         model.addAttribute("user", user);
         model.addAttribute("roles", Role.values());
 
@@ -40,7 +40,7 @@ public class UserController {
     public String userSave(
             @RequestParam String username,
             @RequestParam Map<String, String> form,
-            @RequestParam("userId") User user
+            @RequestParam("userId") UserAll user
     ) {
         user.setUsername(username);
 

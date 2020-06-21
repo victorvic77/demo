@@ -18,14 +18,14 @@ public class Message {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
-    private User author;
+    private UserAll author;
 
     private String filename;
 
     public Message() {
     }
 
-    public Message(String text, String tag, User user) {
+    public Message(String text, String tag, UserAll user) {
         this.author = user;
         this.text = text;
         this.tag = tag;
@@ -35,11 +35,11 @@ public class Message {
         return author != null ? author.getUsername() : "<none>";
     }
 
-    public User getAuthor() {
+    public UserAll getAuthor() {
         return author;
     }
 
-    public void setAuthor(User author) {
+    public void setAuthor(UserAll author) {
         this.author = author;
     }
 

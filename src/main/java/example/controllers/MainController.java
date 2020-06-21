@@ -1,7 +1,7 @@
 package example.controllers;
 
 import example.domain.Message;
-import example.domain.User;
+import example.domain.UserAll;
 import example.repos.MessageRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -49,7 +49,7 @@ public class MainController {
 
     @PostMapping("/main")
     public String add(
-            @AuthenticationPrincipal User user,
+            @AuthenticationPrincipal UserAll user,
             @RequestParam String text,
             @RequestParam String tag, Map<String, Object> model,
             @RequestParam("file") MultipartFile file
