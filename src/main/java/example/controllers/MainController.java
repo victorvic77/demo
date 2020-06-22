@@ -3,7 +3,8 @@ package example.controllers;
 import example.domain.Message;
 import example.domain.UserAll;
 import example.repos.MessageRepo;
-import org.springframework.beans.factory.annotation.Autowired;
+//import example.repos.UserRepo;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
@@ -20,8 +21,12 @@ import java.util.UUID;
 
 @Controller
 public class MainController {
-    @Autowired
-    private MessageRepo messageRepo;
+    //@Autowired
+    private final MessageRepo messageRepo;
+
+    public MainController (MessageRepo messageRepo){
+        this.messageRepo=messageRepo;
+    }
 
     @Value("${upload.path}")
     private String uploadPath;
