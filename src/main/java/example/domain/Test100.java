@@ -1,8 +1,5 @@
 package example.domain;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import lombok.*;
 
 @Getter
@@ -15,4 +12,5 @@ public class Test100 {
     private String name;
     private String family;
     private String family100;
+    private String family200;
 }
