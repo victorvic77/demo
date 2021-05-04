@@ -14,4 +14,5 @@ public class Test100 {
     private Long id;
     private String name;
     private String family;
+    private String family100;
 }
