@@ -20,6 +20,7 @@ public class Test {
     private Double Low;
     private Double Close;
     private Double Volume;
+    private Double Important;
 
     public Test() {
     }
@@ -79,5 +80,13 @@ public class Test {
 
     public Double getVolume() {
         return Volume;
+    }
+
+    public void setImportant (Double Important) {
+        this.Important = Important;
+    }
+
+    public Double getImportant() {
+        return Important;
     }
 }
