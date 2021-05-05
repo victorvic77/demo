@@ -5,6 +5,7 @@ import example.domain.UserAll;
 import example.repos.MessageRepo;
 //import example.repos.UserRepo;
 //import org.springframework.beans.factory.annotation.Autowired;
+import lombok.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
@@ -21,13 +22,14 @@ import java.util.Map;
 import java.util.UUID;
 
 @Controller
+@RequiredArgsConstructor
 public class MainController {
     //@Autowired
     private final MessageRepo messageRepo;
 
-    public MainController (MessageRepo messageRepo){
-        this.messageRepo=messageRepo;
-    }
+    //public MainController (MessageRepo messageRepo){
+     //   this.messageRepo=messageRepo;
+    //}
 
     @Value("${upload.path}")
     private String uploadPath;
